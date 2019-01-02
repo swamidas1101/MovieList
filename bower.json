@@ -1,0 +1,6 @@
+{
+    "name":"moviesList",
+    "dependencies": {
+        "bootstrap":"latest"
+    }
+}

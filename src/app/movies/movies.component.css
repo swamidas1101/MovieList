@@ -1,0 +1,18 @@
+#form{
+    float: right;
+    position: absolute;
+    right: 0px;
+    top:70px;
+}
+@media screen and (max-width: 600px){
+    #form{
+        left:0px;
+        top:200px;
+    }
+  
+        #cardData{
+            margin-top:100px;
+         }
+    
+  
+}

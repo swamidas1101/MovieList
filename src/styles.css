@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: rgb(243, 233, 233);
+}
+#cardData{
+    margin-left:150px;
+    
+ }
+ 
+@media screen and (max-width:600px){
+    #cardData{
+        margin:0px;
+        
+     }
+}
+
+ #cardBtn{
+    position: absolute;
+      bottom: 0px;
+      right: 0px;
+      margin: 20px;
+  }

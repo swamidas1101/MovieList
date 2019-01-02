@@ -1,0 +1,24 @@
+
+#header{
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    font-weight: bold;
+    font-family: sans-serif;
+    z-index: 1;
+   
+}
+#navbar{
+    margin-top: 35px;
+   
+   
+
+}
+#brandImg{
+    height: 40px;
+}

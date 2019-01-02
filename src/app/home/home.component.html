@@ -1,0 +1,51 @@
+
+<div class="container">
+  <div id="cardData">
+    <div class="row">
+        
+        <div class="card col-md-3  my-3 mx-2" style="width:400px" *ngFor="let obj of data" >
+            <img class="card-img-top my-2" src="{{obj.thumbnailUrl}}" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Product Id:{{obj.id}}</h4>
+              <p class="card-text">{{obj.title}}</p>
+              <a href="{{obj.url}}" target="_blank"  class="btn btn-primary" id="cardBtn">  Link  </a>
+            </div>
+         </div>
+          </div>
+    
+ </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="margin-top: 20px"></div>
+<div class="row" id="pagination">
+<div class="col-md-4">
+  <form #fm="ngForm">
+  <input type="text"  [(ngModel)]="goto"  name="goto" placeholder="   Jump to page">
+  <input type="submit" value="goto"  (click)="fnGoto()" class="btn btn-warning" id="butn"  />
+ 
+  </form>
+ </div>
+ <div class="col-md-8">
+      <input type="button" value="pre"  (click)="fnPre()" class="btn btn-warning" id="butn" [disabled]="isPrevTrue"><span class="cp">[{{currpage}}]</span>
+      <input type="button" (click)="fnNext()" value="next" class="btn btn-warning"  id="butn" [disabled]="isNext" >
+      <b class="tp">Total pages:{{totalpage}}</b>
+    </div>
+
+    
+</div>
+</div>
+
+<div class="footer-copyright text-center mt-5 py-3 bg-warning">© 2018 Copyright:
+    <a href="https://www.nowfloats.com/"> NewFloats</a>
+  </div>
